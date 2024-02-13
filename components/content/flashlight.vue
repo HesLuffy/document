@@ -15,7 +15,7 @@ const mouseLeave = e => {
 </script>
 <template>
   <div class="box" ref="boxElement" @mousemove="mouseMove" @mouseleave="mouseLeave">
-    <img ref="maskElement" class="mask-demo" src="/images/2.webp" alt="">
+    <img ref="maskElement" class="mask-demo w-full" src="/images/2.webp" alt="">
   </div>
 </template>
 <style scoped>
