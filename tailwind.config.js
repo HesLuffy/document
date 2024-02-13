@@ -1,9 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        black1: "#323232",
+        black2: "#373737",
+      },
+      fontFamily: {
+        blogFont: ["DM Sans", "Noto Sans Simplified Chinese"],
+      },
+    },
   },
   plugins: [],
-}
-
+};

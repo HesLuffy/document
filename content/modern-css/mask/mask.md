@@ -1,3 +1,8 @@
+<img class="w-full" src="https://pic2.zhimg.com/v2-fd1ad6d61a1044907690d42e3616ae45_r.jpg" />
+
+相关参考链接：
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/mask){class="font-bold mt-4 block" :target="\_blank"}
+
 ## css 遮罩
 
 可以让一个元素按照某张图像的轮廓显示。其实就是把原来的部分内容遮盖起来，按照给定的形状显示。
@@ -28,6 +33,8 @@
   );
 }
 ```
+
+【实现效果】
 
 ::mask
 ::
@@ -94,10 +101,14 @@ mask 展示区域大小，例如 mask-size: 30px | cover | contain | ...;
 }
 ```
 
+【实现效果】
+
 ::mask-composite
 ::
 
 ## 使用 mask 实现一个手电筒效果
+
+【实现效果】
 
 ::flashlight
 ::

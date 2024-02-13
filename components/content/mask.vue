@@ -1,5 +1,5 @@
 <template>
-  <img class="mask-test-img mt-[60px] w-[300px] object-cover h-[300px]" src="/images/1.webp" alt="">
+  <img class="mask-test-img mt-[60px] mx-auto w-[300px] object-cover h-[300px]" src="/images/1.webp" alt="">
 </template>
 <style scoped>
 .mask-test-img {

@@ -7,7 +7,7 @@
           <ul class="ml-4">
             <li v-for="child in link.children" :key="child._path">
               <template v-if="child.children">
-                <h2>{{ child.title }}</h2>
+                <div>{{ child.title }}</div>
                 <ul class="ml-4">
                   <li v-for="c in child.children" :key="c._path">
                     <NuxtLink :to="`${c._path}`">{{ c.title }}</NuxtLink>
