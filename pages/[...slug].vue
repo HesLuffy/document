@@ -17,7 +17,7 @@ const route = useRoute();
             <img v-if="doc.thumbnail" :src="doc.thumbnail" class="w-full  object-cover" alt="">
           </header>
 
-          <div class="pt-5 px-5 pb-[80px]">
+          <div class="pt-5 px-10 pb-[80px]">
             <ContentRenderer :value="doc"></ContentRenderer>
           </div>
 
@@ -75,5 +75,18 @@ pre {
   /* margin-top: 1rem; */
   margin-left: 1rem;
   list-style: inside;
+}
+
+.content table thead th {
+  background-color: rgb(178, 173, 173);
+  padding: 0.8rem 1rem;
+}
+
+.content table td {
+  padding: 0.8rem 1rem;
+}
+
+.content table tbody tr:nth-of-type(even) {
+  background-color: #ddd;
 }
 </style>
