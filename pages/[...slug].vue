@@ -14,7 +14,7 @@ const route = useRoute();
                 {{ doc.date }}
               </div>
             </div>
-            <img v-if="doc.thumbnail" :src="doc.thumbnail" class="w-full  object-cover" alt="">
+            <img v-if="doc.thumbnail" :src="doc.thumbnail" class="w-full object-cover" alt="">
           </header>
 
           <div class="pt-5 px-10 pb-[80px]">
@@ -88,5 +88,27 @@ pre {
 
 .content table tbody tr:nth-of-type(even) {
   background-color: #ddd;
+}
+
+.content .external-link {
+  color: #61e1b2;
+  text-decoration: underline;
+}
+
+.content .nd {
+  position: relative;
+  display: inline-block;
+}
+
+.content .nd::before {
+  content: "";
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0;
+  right: 0;
+  height: 0.7rem;
+  background-color: rgb(126, 215, 126);
+  opacity: 0.7;
+  transform: skew(-30deg);
 }
 </style>

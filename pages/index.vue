@@ -1,7 +1,7 @@
 <template>
-  <div class="flex p-8">
+  <div class="flex p-8 container mx-auto">
     <app-nav class="w-[30rem]" />
-    <div class="container mx-auto">
+    <div>
       <article>
         <h2>为什么会有这个document</h2>
         <p>
