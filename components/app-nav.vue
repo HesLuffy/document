@@ -3,7 +3,7 @@
     <ContentNavigation v-slot="{ navigation }">
       <ul>
         <li v-for="link of navigation" :key="link._path">
-          {{ link.title }}
+          <p class="cursor-default">{{ link.title }}</p>
           <ul class="ml-4">
             <li v-for="child in link.children" :key="child._path">
               <template v-if="child.children">
