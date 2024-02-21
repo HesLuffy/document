@@ -29,7 +29,7 @@ const mouseoutHandler = (e) => {
           >
             <p class="linkTitle cursor-pointer px-2">{{ link.title }}</p>
             <ul
-              class="bg-white whitespace-nowrap w-full absolute top-[6rem] left-[1.4rem] invisible border border-solid border-[#ddd] rounded-md p-4 -translate-y-[1rem] transition-all opacity-0"
+              class="bg-white w-fit whitespace-nowrap absolute top-[6rem] left-[1.4rem] invisible border border-solid border-[#ddd] rounded-md p-4 -translate-y-[1rem] transition-all opacity-0"
             >
               <li v-for="child in link.children" :key="child._path">
                 <template v-if="child.children">

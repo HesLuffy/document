@@ -44,10 +44,10 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.content h2:hover::before,
-.content h3:hover::before,
-.content h4:hover::before,
-.content h5:hover::before {
+.content h2::before,
+.content h3::before,
+.content h4::before,
+.content h5::before {
   content: "#";
   margin-right: 0.8rem;
   color: rgb(162, 205, 162);
