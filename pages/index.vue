@@ -20,6 +20,17 @@
             由于content实在太方便了，所以也没额外再编写后端提供api，自然也就没数据库和CMS，不过将来有可能会改为用MongoDB，这个将来是什么时候，不知道！
           </p>
         </li>
+        <li>
+          视口
+          <p>
+            有三个断点，分别是
+          <ol>
+            <li>desktop：1280px</li>
+            <li>laptop：1194px</li>
+            <li>tablet：640px</li>
+          </ol>
+          </p>
+        </li>
       </ol>
     </article>
   </div>

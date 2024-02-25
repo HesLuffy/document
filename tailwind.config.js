@@ -16,10 +16,16 @@ export default {
         white1: "#f7f7f7",
         grey1: "#eee",
         grey2: "#adadad",
-        blue1: "#515d6d"
+        blue1: "#515d6d",
       },
       fontFamily: {
         blogFont: ["DM Sans", "Noto Sans Simplified Chinese"],
+      },
+      screens: {
+        // min-width
+        tablet: "640px",
+        laptop: "1194px",
+        desktop: "1280px",
       },
     },
   },
