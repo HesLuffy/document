@@ -7,13 +7,17 @@ gsap.registerPlugin(ScrollTrigger);
 const navElement = ref(null);
 const status = ref('false');
 
+const close = () => {
+    status.value = 'false';
+    navElement.value.setAttribute('isOpen', 'false');
+    document.documentElement.classList.remove('overflow-y-hidden');
+    document.body.classList.remove('overflow-y-hidden');
+}
+
 const open = () => {
     status.value = navElement.value.getAttribute('isOpen');
     if(status.value === 'true') {
-        status.value = 'false';
-        navElement.value.setAttribute('isOpen', 'false');
-        document.documentElement.classList.remove('overflow-y-hidden');
-        document.body.classList.remove('overflow-y-hidden');
+        close();
     } else {
         status.value = 'true';
         navElement.value.setAttribute('isOpen', 'true');
@@ -73,6 +77,7 @@ const subMenuListAnimation = (i, e) => {
               <li
                 v-for="link in nav.children"
                 :key="link._path"
+                @click="close"
               >
                 <NuxtLink :to="link._path">{{ link.title }}</NuxtLink>
               </li>
