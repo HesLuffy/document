@@ -12,13 +12,13 @@ const open = () => {
     if(status.value === 'true') {
         status.value = 'false';
         navElement.value.setAttribute('isOpen', 'false');
-        document.documentElement.classList.add('overflow-hidden');
-        document.body.classList.add('overflow-hidden');
+        document.documentElement.classList.remove('overflow-y-hidden');
+        document.body.classList.remove('overflow-y-hidden');
     } else {
         status.value = 'true';
         navElement.value.setAttribute('isOpen', 'true');
-        document.documentElement.classList.remove('overflow-hidden');
-        document.body.classList.remove('overflow-hidden');
+        document.documentElement.classList.add('overflow-y-hidden');
+        document.body.classList.add('overflow-y-hidden');
     }
 }
 
