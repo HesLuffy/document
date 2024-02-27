@@ -10,9 +10,9 @@ const route = useRoute();
           <header>
             <div class="text-center p-5">
               <h1>{{ doc.title }}</h1>
-              <div class="text-gray-50">
+              <!-- <div class="text-[#615f5f]">
                 {{ doc.date }}
-              </div>
+              </div> -->
             </div>
             <img v-if="doc.thumbnail" :src="doc.thumbnail" class="w-full object-cover" alt="">
           </header>

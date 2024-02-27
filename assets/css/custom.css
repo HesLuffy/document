@@ -7,6 +7,10 @@
 }
 
 @layer base {
+  html,
+  body {
+    @apply overscroll-y-none;
+  }
   body {
     @apply text-[1.6rem] font-blogFont bg-white1;
   }
